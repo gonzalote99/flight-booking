@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="styles.css" />
+  <title>flight booking</title>
+</head>
+<body>
+  <header class="container">
+      <nav>
+         <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a class="active" href="#">sing up</a></li>
+
+
+         </ul>
+      </nav>
+  </header>
+
+  <main class="main-content container">
+    <div class="booking-form">
+       <p class="warning"></p>
+       <h3>booking flights</h3>
+       <div class="inputs">
+         <div class="input-group">
+          <label for="">flying from</label>
+          <input class="flying-from inp-style w-100" type="text" name="" placeholder="enter city" /> 
+         </div>
+         <div class="input-group">
+          <label for="">flying to</label>
+          <input class="flying-to inp-style w-100" type="text" name="" placeholder="enter city" /> 
+         </div>
+       </div>
+       <div class="inputs">
+        <div class="input-group">
+           <label for="">departure</label>
+           <input class="flying-departure inp-style w-100" type="date" name="" />
+          
+       </div>
+       <div class="input-group">
+        <label for="">return</label>
+        <input class="flying-return inp-style w-100" type="date" name="" />
+       
+    </div>
+    </div>
+    <div class="input-group f-class">
+        <div class="w-100">
+          <label for="">first class</label>
+          <div class="f-class w-100">
+          <button class="btn first-class-minus">-</button>
+          <input class="first-class-ticket-amount inp-style w-100 mx-10 " type="number" name="" min="0" max="100" />
+          <button class="btn first-class-plus">+</button>
+          </div>
+        </div>
+    </div>
+    <div class="input-group f-class">
+      <div class="w-100">
+        <label for="">economy</label>
+        <div class="f-class">
+        <button class="btn economy-minus ">-</button>
+        <input class="economy-ticket-amount inp-style w-100 mx-10 " type="number" name="" min="0" max="100" />
+        <button class="btn economy-plus">+</button>
+        </div>
+      </div>
+  </div>
+  <div class="calculations">
+   <div class="amount">
+     <div class="left">
+        <p>subtotal</p>
+     </div>
+     <div class="right">
+       <p>$<span class="subtotal"> 00</span></p>
+     </div>
+   </div>
+   <div class="amount">
+    <div class="left">
+       <p>charge 10% vat</p>
+    </div>
+    <div class="right">
+      <p>$<span class="vat"> 00</span></p>
+    </div>
+  </div>
+  <div class="amount">
+    <div class="left">
+       <p>total</p>
+    </div>
+    <div class="right">
+      <p>$<span class="total"> 00</span></p>
+    </div>
+  </div>
+  </div>
+  <button class="btn-style book-now">book now</button>
+    </div>
+    <div class="booking-details">
+      <header>
+         <h3>successfully flight</h3>
+         <p>details</p>
+      </header>
+      <table class="table table-bordered">
+        <tbody>
+         <tr>
+           <td class="strong">flying from</td>
+           <td class="user-flying-from"></td>
+         </tr>
+         <tr>
+          <td class="strong">flying to</td>
+          <td class="user-flying-to"></td>
+        </tr> <tr>
+          <td class="strong">departure</td>
+          <td class="user-departure-date"></td>
+        </tr> <tr>
+          <td class="strong">return</td>
+          <td class="user-return-date"></td>
+        </tr> <tr>
+          <td class="strong">first class</td>
+          <td><span class="user-first-class"> </span>tickets</td>
+        </tr> <tr>
+          <td class="strong">economy</td>
+          <td ><span class="user-economy-class"></span>tickets</td>
+        </tr>
+        <tr class="twopx">
+           <td class="strong">subtotal</td>
+           <td>$<span class="user-subtotal"></span></td>
+        </tr>
+        <tr>
+          <td class="strong">vat</td>
+          <td>$<span class="user-vat"></span></td>
+       </tr>
+       <tr >
+        <td class="strong">total</td>
+        <td>$<span class="user-total"></span></td>
+        
+     </tr>
+        </tbody>
+      </table>
+      <button class="btn-style book-now"><a href="" style="color: #fff;"> back to home </a> </button>
+    </div>
+    <div class="booking-content">
+       <h1>discover the world</h1>
+       <p>lorem ipsum</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
